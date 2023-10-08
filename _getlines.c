@@ -5,7 +5,7 @@
  * @data: The structure containing data of program
  * Return: The numb of bytes
  */
-int _getlines(data_of_program * data)
+int _getlines(data_of_program *data)
 {
 	char buffer[BUFFER_SIZE] = {'\0'};
 	static char *array_of_commands[10] = {NULL};
@@ -50,7 +50,7 @@ int _getlines(data_of_program * data)
 /**
  * check_ops_logic - a fxn dat check 4 logical operators nd split
  * @array_of_commands: The array of various cmds
- * @x: The index in array of cmds being checked
+ * @m: The index in array of cmds being checked
  * @array_of_operators: The array of previous cmd's logical operators
  * Return: The index of last cmd in array of cmds
  */

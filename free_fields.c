@@ -1,7 +1,7 @@
 #include "theshell.h"
 
 /**
- * free_recurrent_data - a fxn dat free d fields needed 4 each loop of a program
+ * free_recurrent_data - a fxn dat free d field needed 4 each loop of a program
  * By Kayode and Esther
  * @data: d structure of d program's data
  * Return: Nil

@@ -1,18 +1,18 @@
 #ifndef THESHELL_H
 #define THESHELL_H
 
-#include <stdio.h> 
+#include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stddef.h>
-#include <errno.h> 
+#include <errno.h>
 #include <string.h>
-#include <sys/types.h> 
+#include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
 #include <signal.h>
-#include <fcntl.h> 
+#include <fcntl.h>
 
 #include "macros.h"
 
@@ -50,17 +50,17 @@ typedef struct builtins
 	int (*function)(data_of_program *data);
 } builtins;
 
-             /*2 add, remove or show aliases*/
+/*2 add, remove or show aliases*/
 int output_alias(data_of_program *data, char *alias);
 
-                  /*2 get d alias*/
+/*2 get d alias*/
 char *fetch_alias(data_of_program *data, char *name);
 
-                  /*2 add alias*/
+/*2 add alias*/
 int write_alias(char *string_alias, data_of_program *data);
 
        /*2 allow 2 read a line frm cmd prompt*/
-int _getlines(data_of_program * data);
+int _getlines(data_of_program *data);
 
    /*2 check 4 logical operators nd split*/
 int check_ops_logic(char *array_of_commands[], int m,
@@ -87,7 +87,7 @@ int list_of_builtins(data_of_program *data);
     /*show shell env*/
 int builtin_environment(data_of_program *data);
 
-        /*set env*/
+    /*set env*/
 int builtin_set_environment(data_of_program *data);
 
        /*unset env*/
