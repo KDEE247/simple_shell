@@ -2,7 +2,7 @@
 /**
  * main - a fxn dat initialize d variables of d prog
  * @argc: d arg count
- * By Kayode and Esther 
+ * By Kayode and Esther
  * @argv: d arg value
  * @env: d numb of values received frm d cmd line
  * Return: Nothing (zero on succes).
